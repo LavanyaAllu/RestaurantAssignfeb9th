@@ -1,0 +1,21 @@
+﻿@using RestaurantAssignFeb9th.Models
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2> food Details</h2>
+
+<div class="container">
+    <div>
+        <h3>Id : @Model.Id</h3>
+    </div>
+    <div>
+        <h3>Name:@Model.Name</h3>
+    </div>
+    <div>
+        <h3>CusineType:@Model.Cusine</h3>
+    </div>
+    <div>
+        <a class="btn btn-default" href="/Restaurant/index">Back</a>
+    </div>
+</div>

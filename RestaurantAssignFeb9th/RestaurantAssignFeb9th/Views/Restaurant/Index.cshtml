@@ -1,0 +1,16 @@
+﻿@model IEnumerable<RestaurantAssignFeb9th.Models.Restaurant>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Display Food Names</h2>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>
+            <a href="/Restaurant/Details/@item.Id"> @item.Cusine</a>       
+        </li>
+    </ul>
+
+}
